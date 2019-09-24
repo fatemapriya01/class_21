@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>javascript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>1.click the button to change the text</h1>
+  <p id="text">Hello</p>
+  <button type="button" onclick="myFunction()">click me</button>
+  <h1>2.click the button to display time and date</h1>
+  <p id="date"></p>
+  <button type="button" onclick="mytest()">click me</button>
+  <h1>3.click the buttons to turn on/off the light</h1>
+   <img id="bulb" src="images/pic_bulboff.gif" alt="bulb"><br>
+   <button type="button" onclick="myfunction1()">on</button>
+   <button type="button" onclick="myfunction2()">off</button>
+    <h1>4.click the buttons to light/blow out the candle</h1>
+   <img id="candle" src="images/candle.jpg" alt="candle"><br>
+   <button type="button" onclick="myfunction3()">on</button>
+   <button type="button" onclick="myfunction4()">off</button>
+   <h1>5.click the button to change the style of text</h1>
+   <p id="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil possimus assumenda sit, minima obcaecati fuga.</p>
+   <button type="button" onclick="mytext2()">click me</button>
+   <h1>6.click the button to hide the text</h1>
+   <p id="text3">Lorem ipsum dolor sit amet.</p>
+   <button type="button" onclick="mytext3()">click me</button>
+   <h1>7.javascipt operator</h1>
+   <p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+   <p id="demo"></p>
+
+
+  
+  <script src="js/script.js"></script>
+  <script>
+    function myFunction(){
+      document.getElementById("text").innerHTML="Hello SSB 156";
+    };
+     function mytest(){
+      document.getElementById("date").innerHTML= Date();
+    };
+    function myfunction1(){
+      document.getElementById("bulb").src='images/pic_bulbon.gif';
+    };
+    function myfunction2(){
+      document.getElementById("bulb").src='images/pic_bulboff.gif';
+    };
+    function mytext2(){
+      document.getElementById("text2").style.fontSize='35px';
+    };
+    function mytext3(){
+      document.getElementById("text3").style.display="none";
+    };
+    var x = 5; var y=2; var z = x+y;
+    document.getElementById("demo").innerHTML=z;
+    function myfunction3(){
+      document.getElementById("candle").src='images/candle.jpg';
+    };
+    function myfunction4(){
+      document.getElementById("candle").src='images/candleon.jpeg';
+    };
+  </script>
+</body>
+</html>
